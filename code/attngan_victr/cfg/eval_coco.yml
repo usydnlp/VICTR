@@ -1,0 +1,40 @@
+CONFIG_NAME: 'attnGAN2-vl'
+
+DATASET_NAME: 'coco'
+DATA_DIR: '../../data/coco'
+GPU_ID: 3
+WORKERS: 1
+
+B_VALIDATION: True
+TREE:
+    BRANCH_NUM: 3
+
+
+TRAIN:
+    FLAG: False
+    NET_G: '' #e.g. '../models/netG_epoch_121.pth'
+    B_NET_D: False
+    SG_ATTN: '' #e.g. '../models/attnsg_epoch_121.pth'
+    BATCH_SIZE: 8
+    NET_E: '../../DAMSMencoders/coco/text_encoder100.pth'
+
+
+GAN:
+    DF_DIM: 96
+    GF_DIM: 48
+    Z_DIM: 100
+    R_NUM: 3
+
+TEXT:
+    EMBEDDING_DIM: 1456 #256
+    CAPTIONS_PER_IMAGE: 5
+    WORDS_NUM: 12
+    DS_EMBEDDING_DIM: 256
+
+
+SG:
+    SCENE_GRAPH_FILE: 'coco_sg.json'
+    MAX_OBJECTS: 5
+    MAX_ATTRIBUTES: 2
+    MAX_RELATIONSHIPS: 4
+    SG_DIM: 1200
