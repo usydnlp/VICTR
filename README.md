@@ -85,16 +85,18 @@ The saved models will be available in output files. The training epoch and savin
 
 ## 5. Evaluation
 
-1. Replace the path to saved models to the ```TRAIN.NET_G``` and ```TRAIN.SG_ATTN``` in the evaluation yml files (e.g. ```NET_G: '../models/netG_epoch_128.pth' ``` and ```SG.SG_ATTN: '../models/attnsg_epoch_128.pth'```):
+1. Replace the path to saved models to the ```TRAIN.NET_G``` and ```TRAIN.SG_ATTN``` in the evaluation yml files (e.g. ```NET_G: '../models/netG_epoch_128.pth' ``` and ```SG.SG_ATTN: '../models/attnsg_epoch_128.pth'```), and make sure the ```B_VALIDATION``` is set to ```True``` which will use the coco2014 eval set for generation:
 
-- attnGAN-VICTR: ```code/attngan_victr/cfg/eval_coco.yml```, 
+- attnGAN-VICTR: ```code/attngan_victr/cfg/eval_coco.yml```
 
 - DM-GAN-VICTR: ```code/dmgan_victr/cfg/eval_coco.yml```
 
 2. Run the following command:
 
-```python main.py --cfg cfg/eval_coco.yml --gpu 0 --use_sg```
+```python main.py --cfg cfg/eval_coco.yml --gpu 0 --use_sg``` 
 
+3. Evaluation metrics
+By running the evaluation code, the generated images can be found in the folder under the model path. To evalute the generated images, the R-precision will be calculated automatically during the evaluation (Using the evaluation code from [DM-GAN](https://github.com/MinfengZhu/DM-GAN)). For the IS and FID, we also use directly the evaluation script from [DM-GAN](https://github.com/MinfengZhu/DM-GAN).
 
 ## References:
 - [StackGAN: Text to Photo-realistic Image Synthesis with Stacked Generative Adversarial Networks](https://openaccess.thecvf.com/content_ICCV_2017/papers/Zhang_StackGAN_Text_to_ICCV_2017_paper.pdf) [[github]](https://github.com/hanzhanggit/StackGAN)
