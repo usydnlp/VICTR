@@ -1,4 +1,4 @@
-# VICTR: Visual Information Captured Text Representation for Text-to-Image Multimodal Tasks
+# VICTR: Visual Information Captured Text Representation for Text-to-Image Generation Tasks
 This repository contains code for paper [VICTR: Visual Information Captured Text Representation for Text-to-Image Generation Tasks](https://arxiv.org/pdf/2010.03182.pdf)
 
 <h3 align="center">
