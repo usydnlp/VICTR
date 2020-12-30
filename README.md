@@ -1,5 +1,5 @@
 # VICTR: Visual Information Captured Text Representation for Text-to-Image Multimodal Tasks
-This repository contains code for paper [VICTR: Visual Information Captured Text Representation for Text-to-Image Multimodal Tasks](https://arxiv.org/pdf/2010.03182.pdf)
+This repository contains code for paper [VICTR: Visual Information Captured Text Representation for Text-to-Image Generation Tasks](https://arxiv.org/pdf/2010.03182.pdf)
 
 <h3 align="center">
   <b>Han, C.*, Long, S.*, Luo, S., Wang, K., & Poon, J. (2020, December). <br/><a href="https://www.aclweb.org/anthology/2020.coling-main.277.pdf">VICTR: Visual Information Captured Text Representation for Text-to-Vision Multimodal Tasks</a><br/>In Proceedings of the 28th International Conference on Computational Linguistics (pp. 3107-3117)</b></span>
