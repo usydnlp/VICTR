@@ -68,8 +68,8 @@ Evaluation: ```wget http://images.cocodataset.org/zips/val2014.zip```
 
 ### 3.3 Preprocessed caption graphs and trained embeddings of VICTR
 Processed caption graphs:
-- Training: ``` python google_drive.py 1_Gm_IUzG3U4vWN8Ngv5XPoQgnbQeq5Ld victr_sg_train.zip``` download and unzip to ```data/coco/train/```
-- Evaluation: ``` python google_drive.py 1tlNp7nraRmwqoq8LS_7yLRbvweCmdWJL victr_sg_test.zip``` download and unzip to ```data/coco/test/```
+- Training: ``` python google_drive.py 1LVnM22QKO6hbCzQ173EjOvNBLCJ7JopP victr_sg_train.zip``` download and unzip to ```data/coco/train/```
+- Evaluation: ``` python google_drive.py 1KhJezwScr_yd7wfeyczSRjDuf7IYaNDp victr_sg_test.zip``` download and unzip to ```data/coco/test/```
 
 Trained graph embeddings: ``` python google_drive.py 1lr7Mcw6R6cr5zYnjYJ_ckmnkR0ARYa3q victr_graph.zip``` download and unzip to ```data/coco/```
 
